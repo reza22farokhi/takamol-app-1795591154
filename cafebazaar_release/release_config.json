@@ -1,0 +1,12 @@
+{
+  "app_name": "اپلیکیشن آموزشی تکامل",
+  "package_name": "ir.takamol.app1795591154",
+  "version_code": 1,
+  "version_name": "1.0.0",
+  "target_store": "CafeBazaar",
+  "created_at": "2026-11-25T11:36:15.261493",
+  "notes": [
+    "برای انتشار نهایی در کافه‌بازار، فایل APK یا AAB باید با Keystore معتبر امضا شود.",
+    "بیلد سنگین Android SDK / Gradle معمولاً در محیط Termux محدود است؛ از این بسته می‌توان در GitHub Actions یا EAS Build استفاده کرد."
+  ]
+}

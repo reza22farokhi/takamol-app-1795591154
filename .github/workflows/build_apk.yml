@@ -1,0 +1,48 @@
+name: Build Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Check Flutter project
+        id: check_flutter
+        run: |
+          if [ -f "pubspec.yaml" ]; then
+            echo "is_flutter=true" >> $GITHUB_OUTPUT
+          else
+            echo "is_flutter=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Setup Flutter
+        if: steps.check_flutter.outputs.is_flutter == 'true'
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.0'
+          channel: 'stable'
+
+      - name: Build Flutter APK
+        if: steps.check_flutter.outputs.is_flutter == 'true'
+        run: |
+          flutter pub get
+          flutter build apk --release
+
+      - name: Upload Flutter APK
+        if: steps.check_flutter.outputs.is_flutter == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-apk
+          path: build/app/outputs/flutter-apk/app-release.apk

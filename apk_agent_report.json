@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "project_dir": "/data/data/com.termux/files/home/takamol_projects/app_1795591154",
+  "backup_zip": "/data/data/com.termux/files/home/takamol_backup/cafebazaar_agent/app_1795591154_before_apk_agent_20261125_113615.zip",
+  "download_zip": "/data/data/com.termux/files/home/storage/downloads/app_1795591154_cafebazaar_bundle.zip",
+  "download_error": null,
+  "environment": {
+    "tools": {
+      "zip": true,
+      "unzip": true,
+      "python3": true,
+      "node": true,
+      "npm": true,
+      "npx": true,
+      "flutter": false,
+      "gradle": true,
+      "java": true,
+      "gh": true,
+      "git": true
+    },
+    "storage_ready": true,
+    "downloads_dir": "/data/data/com.termux/files/home/storage/downloads"
+  },
+  "build_attempt": {
+    "attempted": false,
+    "reason": "در محیط Termux ابزار کامپایل کامل اندروید (Android SDK / Gradle / Flutter SDK) نصب نیست؛ بسته ZIP و workflow آماده شد.",
+    "has_pubspec": true,
+    "has_package_json": false
+  }
+}

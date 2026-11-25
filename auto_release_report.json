@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "apk_built_locally": false,
+  "local_apk_files": [],
+  "download_zip": "/data/data/com.termux/files/home/storage/downloads/app_1795591154_cafebazaar_bundle.zip",
+  "backup_zip": "/data/data/com.termux/files/home/takamol_backup/cafebazaar_agent/app_1795591154_before_apk_agent_20261125_113615.zip",
+  "github_cli": {
+    "installed": true,
+    "authenticated": true,
+    "detail": "github.com\n  ✓ Logged in to github.com account reza22farokhi (/data/data/com.termux/files/home/.config/gh/hosts.yml)\n  - Active account: true\n  - Git operations protocol: https\n  - Token: gho_************************************\n  - Token scopes: 'gist', 'read:org', 'repo', 'workflow'"
+  },
+  "next_action_needed": "حساب GitHub متصل است؛ می‌توان مخزن را ایجاد و workflow ساخت APK را اجرا کرد.",
+  "timestamp": "2026-11-25T11:36:16.597045"
+}
