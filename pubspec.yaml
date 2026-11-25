@@ -10,7 +10,6 @@ dependencies:
   flutter_riverpod: ^2.4.9
   google_fonts: ^6.1.0
   flutter_highlight: ^0.7.0
-  flutter/services:
     sdk: flutter
   sqflite: ^2.3.0
   path: ^1.9.0
